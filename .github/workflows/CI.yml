@@ -1,0 +1,14 @@
+name: Simple CI pipeline
+
+on: push
+
+jobs: 
+   run-python:
+        runs-on: ubuntu-latest
+
+        steps: 
+         - name: Get code
+           uses: actions/checkout@v4
+           
+        - name: Run check
+           run: "echo CI Pipleline running"
